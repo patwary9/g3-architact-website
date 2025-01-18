@@ -25,6 +25,14 @@
   .color-Dark-03{
     color: rgba(114, 114, 114, 1);
   }
+
+  main{
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+  main > section{
+    margin-top: 130px;
+  }
 /* header style */
 
 
@@ -77,10 +85,92 @@
   width: 100%;
 }
 
+/* team and future style */
+.teams{
+  align-items: center;
+}
+.teams-img{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 24px;
+}
+.teams-future{
+  margin-left: 130px;
+  max-width: 530px;
+}
+.future-button{
+  background-color: rgba(255, 144, 14, 1);
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+    padding:20px 23px;
+    border-radius: 8px;
+    border: none;
+    margin-bottom: 40px;
+}
+.future-title{
+  font-size: 2.83rem;
+  font-weight: 700;
+}
+.quick{
+  font-weight: 500;
+}
+.features{
+  color:rgba(255, 144, 14, 1) ;
+  font-weight: bold;
+}
+.future-description {
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 28px;
+}
+
+/* card style */
+.card-title{
+  font-size: 2.83rem;
+  font-weight: bold;
+}
+.fact-card{
+  border: 2px solid goldenrod;
+  border-radius: 8px;
+  width: 240px;
+  height: 240px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.fact-number{
+  font-size: 2.3rem;
+  font-weight: 500px;
+  margin-top: 5px;
+  margin-bottom: 8px;
+}
+.fact-name{
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-top: 10px;
+}
+.card-descreption{
+  max-width: 540px;
+}
+.factore-container{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+}
+
 /* responsive media queary  */
 
 @media screen and (max-width:675px) {
   .nav-bar, .nav-link{
     flex-direction: column;
+  }
+  .teams {
+    flex-direction: column;
+  }
+  .teams-img{
+    grid-template-columns: repeat(1,1fr);
+  }
+  .teams-future{
+    margin-left: 5px;
   }
 }
