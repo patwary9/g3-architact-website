@@ -7,3 +7,80 @@
     font-weight: 400px;
     font-style: normal;
   }
+
+  .background-color1{
+    background-color: rgba(255, 144, 14, 0.1);
+  }
+
+  /* shared style */
+  .display-flex{
+    display: flex;
+  }
+  .color-Dark-01{
+    color: rgba(19, 19, 19, 1);
+  }
+  .color-Dark-02{
+    color: rgba(66, 66, 66, 1);
+  }
+  .color-Dark-03{
+    color: rgba(114, 114, 114, 1);
+  }
+/* header style */
+
+
+/* nav bar related style */
+
+.nav-bar{
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-item{
+    list-style: none;
+    margin-right: 35px;
+}
+.brand-name{
+    font-size: 2.8rem;
+    font-weight: bold;
+}
+.nav-link{
+    text-decoration: none;
+}
+.nav-bar, .banner{
+    max-width: 1440px ;
+    margin: 0 auto;
+}
+
+/* banner style */
+.banner-content{
+    max-width: 860px;
+    margin: 0 auto;
+    text-align: center;
+}
+.banner-title{
+    font-size: 4rem;
+    font-weight: 700px;
+}
+.banner-description{
+    font-size: 1rem;
+}
+.banner-button{
+    background-color: rgba(255, 144, 14, 1);
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+    padding:20px 23px;
+    border-radius: 8px;
+    border: none;
+    margin-bottom: 40px;
+}
+.banner-img{
+  width: 100%;
+}
+
+/* responsive media queary  */
+
+@media screen and (max-width:675px) {
+  .nav-bar, .nav-link{
+    flex-direction: column;
+  }
+}
